@@ -1,1 +1,1 @@
-from src.views.page_setup import AddConfigPage, DefaultConfig
+from src.views.page_setup import AddConfigPage, DefaultConfig, AddTheme, DarkTheme, LightTheme

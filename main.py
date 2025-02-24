@@ -6,6 +6,9 @@ def main(page: ft.Page):
     config = DefaultConfig()
     AddConfigPage(page, config).settings()
 
+    theme = DarkTheme()
+    AddTheme(page, theme).theme()
+
 
     page.add()
 if __name__ == "__main__":
