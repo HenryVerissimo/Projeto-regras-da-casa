@@ -1,0 +1,1 @@
+from src.views.page_setup import AddConfigPage, DefaultConfig
