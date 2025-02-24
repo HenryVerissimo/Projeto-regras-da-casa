@@ -20,6 +20,7 @@ Entre os benefícios oferecidos, destacam-se a centralização das informações
 ### ⚠️**Dependências:**
 - Python 3.12.3
 - Mysql 8.0.41
+- Flet 0.27.1
 
 ### 🤝**Como colaborar com o projeto?**
 
