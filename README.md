@@ -3,7 +3,7 @@
 ## Aplicação Desktop utilisando Python e o Framework Flet
 
 
-<img src="/home/henrique-silva/Área de trabalho/projeto-regras/src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" height=300 width=330>
+<img src="/src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" height=300 width=330>
 
 
 ### 💻**Status do projeto:** 
