@@ -2,7 +2,9 @@
 
 ## Aplicação Desktop utilisando Python e o Framework Flet
 
-<img src="src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" style="display: block; margin: 0 auto;" height=300 width=330>
+<div align="center">
+  <img src="src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" height=300 width=330 />
+</div>
 
 ### 🏗️**Status do projeto:** 
 O projeto ainda está em fase inicial de desenvolvimento e, portanto, não possui uma versão funcional para testes no momento. Estou trabalhando para disponibilizar uma versão de demonstração em breve!
