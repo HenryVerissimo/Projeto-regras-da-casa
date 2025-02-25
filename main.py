@@ -9,6 +9,8 @@ def main(page: ft.Page):
     theme = DarkTheme()
     AddTheme(page, theme).theme()
 
+    view = LoginUserView(page)
+    NavegationController(page).navegation_to(view)
 
     page.add()
 if __name__ == "__main__":

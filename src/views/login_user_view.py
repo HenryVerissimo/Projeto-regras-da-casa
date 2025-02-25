@@ -5,7 +5,7 @@ from .interface_view import InterfaceView
 class LoginUserView(InterfaceView):
 
     def __init__(self, page: ft.Page):
-        self.lista_animacao = ft.Image(src="/src/views/assets/logo_projeto_regras.png", width=200, height=200)
+        self.lista_animacao = ft.Image(src=r"src/views/assets/logo_projeto_regras.png", width=200, height=200)
         self.texto_login = ft.Text(value="Login de usuário", size=20, font_family= "Nimbus Mono PS", text_align=ft.TextAlign.CENTER)
         self.entrada_nome = ft.TextField(hint_text="Insira o nome de usuário", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.entrada_senha = ft.TextField(hint_text="Insira sua senha",password=True, width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
