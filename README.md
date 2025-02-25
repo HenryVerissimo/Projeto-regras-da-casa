@@ -3,11 +3,13 @@
 ## Aplicação Desktop utilisando Python e o Framework Flet
 
 
-<img src="/src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" height=300 width=330>
+<img src="src/views/assets/logo_projeto_regras.png" alt="Logo do projeto regras da casa" height=300 width=330>
 
 
-### 💻**Status do projeto:** 
-Em andamento...
+### 🏗️**Status do projeto:** 
+O projeto ainda está em fase inicial de desenvolvimento e, portanto, não possui uma versão funcional para testes no momento. Estou trabalhando para disponibilizar uma versão de demonstração em breve!
+
+---
 
 ### 📑**Sobre o projeto:**
 
@@ -17,34 +19,49 @@ Além disso, o software oferece a funcionalidade de criar listas de tarefas dom�
 
 Entre os benefícios oferecidos, destacam-se a centralização das informações relacionadas à gestão da casa e a flexibilidade para adaptar o sistema ao cotidiano do usuário, tornando-o uma ferramenta prática para otimizar a organização doméstica.
 
-### ⚠️**Dependências:**
-- Python 3.12.3
-- Mysql 8.0.41
-- Flet 0.27.1
+---
+
+### ⚠️**Dependências Manuais:**
+### - Python 3.12.3
+### - Mysql 8.0.41
+
+---
 
 ### 🤝**Como colaborar com o projeto?**
-
-1. Primeiro copie o repositório git para sua máquina local:
+**1. Primeiro copie o repositório git para sua máquina local:**
 ```
 git clone https://github.com/HenryVerissimo/Projeto-regras-da-casa.git
 ```
-2. crie e entre em uma nova branch:
+**2. Configure o ambiente virtual:**
+```
+python -m venv venv
+
+Windows: .\venv\Scripts\activate
+Linux/MacOS: source venv/bin/activate
+```
+**3. Instale as dependências (Frameworks/Bibliotecas):**
+```
+pip install -r doc/requirements.txt
+```
+**4. crie e entre em uma nova branch:**
 ```
 git checkout -b <nome-da-sua-branch>
 ```
-3. crie sua funcionalidade e faça o commit dela:
+**5. crie sua funcionalidade e faça o commit dela:**
 ```
 git add .
 git commit -m "Descrição clara das alterações"
 ```
-4. Depois é só enviar a nova branch para o repositório remoto:
+**6. Depois é só enviar a nova branch para o repositório remoto:**
 ```
 git push origin <nome-da-branch>
 ```
-Pronto! Agora é solicitar um Pull Request (PR) no GitHub:
+**Pronto! Agora é solicitar um Pull Request (PR) no GitHub:**
 
 - Acesse o repositório no GitHub
 
 - Complete o template do PR com detalhes das mudanças
 
 - Revise se está apontando para a branch principal correta
+
+---

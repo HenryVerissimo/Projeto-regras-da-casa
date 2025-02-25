@@ -13,6 +13,7 @@ def main(page: ft.Page):
     NavegationController(page).navegation_to(view)
 
     page.add()
+    
 if __name__ == "__main__":
 
     ft.app(target=main)
