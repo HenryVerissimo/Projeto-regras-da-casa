@@ -30,7 +30,3 @@ class MysqlConnection(InterfaceConnection):
         if self.connection and self.connection.is_connected():
             self.connection.close()
             print("Conexão com o banco de dados fechada.")
-
-            
-conexao = MysqlConnection("localhost", "3306", "teste", "")
-conexao.connect()
