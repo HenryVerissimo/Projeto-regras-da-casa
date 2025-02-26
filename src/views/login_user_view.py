@@ -1,17 +1,19 @@
 import flet as ft
 
 from .interface_view import InterfaceView
+from .create_cont_view import CreateContView
+from src.controllers import NavegationController
 
 class LoginUserView(InterfaceView):
 
-    def __init__(self):
+    def __init__(self, page: ft.Page):
         self.lista_animacao = ft.Image(src=r"src/views/assets/logo_projeto_regras.png", width=200, height=200)
         self.texto_login = ft.Text(value="Login de usuário", size=20, font_family= "Nimbus Mono PS", text_align=ft.TextAlign.CENTER)
         self.entrada_nome = ft.TextField(hint_text="Insira o nome de usuário", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.entrada_senha = ft.TextField(hint_text="Insira sua senha",password=True, width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.botao_entrar = ft.Button(text="Entrar", width=150, color="#101413", bgcolor="#50c77a")
         self.botao_esqueceu_senha = ft.TextButton(text="Esqueci minha senha", style=ft.ButtonStyle("#50c77a"))
-        self.botao_criar_conta = ft.TextButton(text="Criar uma conta nova", style=ft.ButtonStyle("#50c77a"))
+        self.botao_criar_conta = ft.TextButton(text="Criar uma conta nova", style=ft.ButtonStyle("#50c77a"), on_click=lambda e: NavegationController(page).navegation_to(CreateContView(page)))
 
 
     def build(self) -> ft.Column:

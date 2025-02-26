@@ -4,7 +4,7 @@ from .interface_view import InterfaceView
 
 class CreateContView(InterfaceView):
 
-    def __init__(self):
+    def __init__(self, page: ft.Page):
         self.texto = ft.Text(value="Vamos criar uma nova conta", size=20, font_family= "Nimbus Mono PS", text_align=ft.TextAlign.CENTER)
         self.entarda_nome = ft.TextField(hint_text="Nome de usuário", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.entrada_senha = ft.TextField(hint_text="Cire uma senha", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
