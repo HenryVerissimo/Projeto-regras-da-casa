@@ -1,8 +1,6 @@
 import flet as ft
 
 from .interface_view import InterfaceView
-from .create_cont_view import CreateContView
-from src.controllers import NavegationController
 
 class LoginUserView(InterfaceView):
 
@@ -13,7 +11,7 @@ class LoginUserView(InterfaceView):
         self.entrada_senha = ft.TextField(hint_text="Insira sua senha",password=True, width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.botao_entrar = ft.Button(text="Entrar", width=150, color="#101413", bgcolor="#50c77a")
         self.botao_esqueceu_senha = ft.TextButton(text="Esqueci minha senha", style=ft.ButtonStyle("#50c77a"))
-        self.botao_criar_conta = ft.TextButton(text="Criar uma conta nova", style=ft.ButtonStyle("#50c77a"), on_click=lambda e: NavegationController(page).navegation_to(CreateContView(page)))
+        self.botao_criar_conta = ft.TextButton(text="Criar uma conta nova", style=ft.ButtonStyle("#50c77a"), on_click=lambda e: login_for_create_cont_constructor(page))
 
 
     def build(self) -> ft.Column:
@@ -70,3 +68,5 @@ class LoginUserView(InterfaceView):
                 )
             ],        
         )
+
+from src.main.constructor.login_user_constructor import login_for_create_cont_constructor

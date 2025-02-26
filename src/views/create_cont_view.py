@@ -11,7 +11,7 @@ class CreateContView(InterfaceView):
         self.confirmacao_senha = ft.TextField(hint_text="Confirme a senha", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.entrada_email = ft.TextField(hint_text="Vincule um Email a conta", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
         self.botao_criar_conta = ft.Button(text="Criar conta", width=150, color="#101413", bgcolor="#50c77a")
-        self.botao_voltar_loggin = ft.TextButton(text="Voltar", style=ft.ButtonStyle("#50c77a"))
+        self.botao_voltar_loggin = ft.TextButton(text="Voltar", style=ft.ButtonStyle("#50c77a"), on_click=lambda e: create_cont_for_login(page))
 
     def build(self):
         return ft.Row(
@@ -61,3 +61,5 @@ class CreateContView(InterfaceView):
                 )
             ]
         )
+    
+from src.main.constructor.create_cont_constructor import create_cont_for_login
