@@ -4,7 +4,7 @@ from .interface_view import InterfaceView
 
 class LoginUserView(InterfaceView):
 
-    def __init__(self, page: ft.Page):
+    def __init__(self, page: ft.Page) -> None:
         self.lista_animacao = ft.Image(src=r"src/views/assets/logo_projeto_regras.png", width=200, height=200)
         self.texto_login = ft.Text(value="Login de usuário", size=20, font_family= "Nimbus Mono PS", text_align=ft.TextAlign.CENTER)
         self.entrada_nome = ft.TextField(hint_text="Insira o nome de usuário", width=300, text_align=ft.TextAlign.CENTER, border_color="#50c77a")
@@ -14,7 +14,7 @@ class LoginUserView(InterfaceView):
         self.botao_criar_conta = ft.TextButton(text="Criar uma conta nova", style=ft.ButtonStyle("#50c77a"), on_click=lambda e: login_for_create_cont_constructor(page))
 
 
-    def build(self) -> ft.Column:
+    def build(self) -> ft.Row:
         return ft.Row(
             expand=True,
             alignment=ft.MainAxisAlignment.CENTER,
